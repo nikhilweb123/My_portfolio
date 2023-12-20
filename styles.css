@@ -1,3 +1,6 @@
+html {
+    scroll-behavior:sm;
+   }
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +14,11 @@
     background-size: cover;
     background-position: center;
 
+}
+.main_mo{
+    margin-left: 5%;
+    margin-top: 1%;
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -115,20 +123,21 @@ h4{
 }
 .about{
     width: 100%;
+    height: 110vh;
     padding: 10px 0px;
     background-color: #0b1c32;
 
 }
 .about img{
-    height: auto;
-    width: 430px;
+    height: 100vh;
+    width: 450px;
 }
 .about-text{
     width: 550px;
 }
 .main{
     width: 1130px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -154,8 +163,14 @@ h4{
     font-size: 18px;
     margin-bottom: 45px;
 }
+/* 
+h2{
+    text-align: center;
+} */
+
 button{
     background-color: #f40000;
+    
     color: aliceblue;
     text-decoration: none;
     border: 2px solid transparent;
@@ -163,9 +178,19 @@ button{
     padding: 13px 30px;
     border-radius: 30px;
     transition: .4s;
+    
 }
 button:hover{
     background-color: transparent;
     border: 2px solid #f40000;
     cursor: pointer;
+}
+.My-Skills{
+    width: 100px;
+    height: 100px;
+    background-color: #0b1c32;
+}
+
+.My-Skills h2{
+    color: #000;
 }
