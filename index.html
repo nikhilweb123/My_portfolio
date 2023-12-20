@@ -1,58 +1,78 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My portfolio</title>
-        <link rel ="stylesheet" type="text/css" href="styles.css">
-        <link  href="styles.css">
+<html lang="en">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="png.jpg">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
 
-    </head>
 <body>
 
+    <!-- Hero Section -->
     <div class="hero">
         <nav>
-        
             <h2 class="logo"><span>My</span>Port<span>folio</span></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">contact us</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About_me">About me</a></li>
+                <li><a href="#Skills" onclick="showAlert('Skills')">Skills</a></li>
+                <li><a href="#contact_me" onclick="showAlert('Contact us')">Contact us</a></li>
             </ul>
-            <a href="#" class="btn">subscribe</a>
+            <a href="#" class="btn">Subscribe</a>
         </nav>
-
-        <div class="content">
-            <h4>Hello, My name is</h4>
-            <h1>NIKHIL <span>KUMAR</span></h1>
-            <h3>I am Engineering Student and a Web developer</h3>
-            <div class="nw">
-                <form>
-                    <input type="email" name ="email" id="mail" placeholder="Enter your mail">
-                    <input type="submit" name ="submit" value="lets start">
-
-                </form>
-            </div>
-        </div>
     </div>
 
-    <!-- About Section start -->
-    <section class="about">
+    <!-- Content Section -->
+    <div class="content">
+        <h4>Hello, My name is</h4>
+        <h1>NIKHIL <span>KUMAR</span></h1>
+        <h3>I am a <span>developer</span> </h3>
+        <div class="nw">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Enter your mail" />
+                <input type="submit" class="main_mo" name="submit" value="Let's start" />
+            </form>
+        </div>
+        <a href="#" class="main_mo"></a>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="About_me">
         <div class="main">
-            <img src="joanna-kosinska-szFUQoyvrxM-unsplash.jpg" alt="can't reload  the image" height="800px" width="1000px">
-            <div class ="about-text">
+            <img src="joanna-kosinska-szFUQoyvrxM-unsplash.jpg" alt="Profile Image" loading="lazy" />
+
+            <div class="about-text">
                 <h2>About <span>me</span></h2>
-                <h5>Engineer & <span>developer</span>></h5>
-                <p>I am a <span>Engineering Student</span> & <span>web developer</span> , I am final year student of Btech(computer science),  I can provide clean and pixel perfect design . I can make a responsive website & interactive website with web animations .</p>
-                <button type="button">Lets talk</button>
+                <h5>&GreaterGreater; Engineer & <span>developer</span> &GreaterGreater;</h5>
+                <p>
+                    I am a <span>Engineering Student</span> & <span>web developer</span>. I am a graduated student of
+                    Btech(computer science). I can provide clean and pixel-perfect design. I can make a responsive
+                    website & interactive website with web animations. As a <span>developer</span>, you likely have
+                    experience and skills in designing, building, and maintaining websites and <span>web applications</span>
+                    using various <span>programming languages</span> and technologies. Although I'm very familiar with using
+                    frameworks, my websites are primarily hand-coded using <span>HTML5, CSS3, React.js</span>,
+                    <span>Bootstrap & JavaScript.</span>.
+                </p>
+                <a href="https://www.linkedin.com/in/nikhil-kumar-07b13a1b2/">
+                    <button>Let's talk</button>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- contact me -->
-    
+    <!-- Skills Section -->
+   
+    <!-- Contact Section -->
+    <div id="contact_me">
+        <!-- Add your contact form or details here -->
+    </div>
 
 </body>
 </html>
